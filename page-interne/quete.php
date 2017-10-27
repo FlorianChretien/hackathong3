@@ -1,7 +1,7 @@
 <?php
-include_once('page-interne/header.php');
+include_once('../header.php');
 ?>
 
 <?php
-include_once('page-interne/footer.php');
+include_once('../footer.php');
 ?>

@@ -259,84 +259,84 @@ function initMap() {
     });
 
     var iconBase = window.location.href;
-    var iconBaseSplit = iconBase.split("/");
+    var iconBaseSplit = iconBase.split("hackathong3");
 
     var marker1 = new google.maps.Marker({
         position: aquaRochelle,
         map: map,
-        icon: iconBaseSplit[0] + '/_ECVDigital/hackathon/img/marker-science.png',
+        icon: iconBaseSplit[0] + 'hackathong3/img/marker-science.png',
         title: 'Aquarium La Rochelle'
     });
     var marker2 = new google.maps.Marker({
         position: aquaBiarritz,
         map: map,
-        icon: iconBaseSplit[0] + 'img/marker-science.png',
+        icon: iconBaseSplit[0] + 'hackathong3/img/marker-science.png',
         title: 'Aquarium de Biarritz'
     });
     var marker3 = new google.maps.Marker({
         position: capScience,
         map: map,
-        icon: iconBaseSplit[0] + 'img/marker-science.png',
+        icon: iconBaseSplit[0] + 'hackathong3/img/marker-science.png',
         title: 'Cap Sciences'
     });
     var marker4 = new google.maps.Marker({
         position: muSaintCroix,
         map: map,
-        icon: iconBaseSplit[0] + 'img/marker-histoire.png',
+        icon: iconBaseSplit[0] + 'hackathong3/img/marker-histoire.png',
         title: 'Musée Sainte-Croix'
     });
     var marker5 = new google.maps.Marker({
         position: muAngouleme,
         map: map,
-        icon: iconBaseSplit[0] + 'img/marker-art.png',
+        icon: iconBaseSplit[0] + 'hackathong3/img/marker-art.png',
         title: 'Musée d\'Angoulême'
     });
     var marker6 = new google.maps.Marker({
         position: muCACP,
         map: map,
-        icon: iconBaseSplit[0] + 'img/marker-art.png',
+        icon: iconBaseSplit[0] + 'hackathong3/img/marker-art.png',
         title: 'CAPC musée d\'art contemporain de Bordeaux'
     });
     var marker7 = new google.maps.Marker({
         position: vesunna,
         map: map,
-        icon: iconBaseSplit[0] + 'img/marker-histoire.png',
+        icon: iconBaseSplit[0] + 'hackathong3/img/marker-histoire.png',
         title: 'VESUNNA, site-musée gallo-romain'
     });
     var marker8 = new google.maps.Marker({
         position: muNatioPrehi,
         map: map,
-        icon: iconBaseSplit[0] + 'img/marker-histoire.png',
+        icon: iconBaseSplit[0] + 'hackathong3/img/marker-histoire.png',
         title: 'Musée National de Préhistoire'
     });
     var marker9 = new google.maps.Marker({
         position: museeEcoMar,
         map: map,
-        icon: iconBaseSplit[0] + 'img/marker-science.png',
+        icon: iconBaseSplit[0] + 'hackathong3/img/marker-science.png',
         title: 'Écomusée de Marquèze'
     });
     var marker10 = new google.maps.Marker({
         position: fortLourdes,
         map: map,
-        icon: iconBaseSplit[0] + 'img/marker-histoire.png',
+        icon: iconBaseSplit[0] + 'hackathong3/img/marker-histoire.png',
         title: 'Fort de Lourdes'
     });
     var marker11 = new google.maps.Marker({
         position: musBeauArt,
         map: map,
-        icon: iconBaseSplit[0] + 'img/marker-art.png',
+        icon: iconBaseSplit[0] + 'hackathong3/img/marker-art.png',
         title: 'Musée des Beaux-arts'
     });
     var marker12 = new google.maps.Marker({
         position: musNatAdriDu,
         map: map,
-        icon: iconBaseSplit[0] + 'img/marker-art.png',
+        icon: iconBaseSplit[0] + 'hackathong3/img/marker-art.png',
         title: 'Musée national Adrien Dubouché'
     });
     var marker13 = new google.maps.Marker({
         position: musJacChirac,
         map: map,
-        icon: iconBaseSplit[0] + 'img/marker-art.png',
+        icon: iconBaseSplit[0] + 'hackathong3/img/marker-art.png',
         title: 'Musée du Président Jacques Chirac'
     });
 

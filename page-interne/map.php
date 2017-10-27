@@ -1,5 +1,5 @@
 <?php
-include_once('page-interne/header.php');
+include_once('../header.php');
 ?>
 
 <div id="map"></div>
@@ -8,5 +8,5 @@ include_once('page-interne/header.php');
 <script type="text/javascript" src="../js/map.js"></script>
 
 <?php
-include_once('page-interne/footer.php');
+include_once('../footer.php');
 ?>
