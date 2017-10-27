@@ -33,6 +33,14 @@ $page_interne = strstr($chemin, 'page-interne');
 
     ?>js/jquery-3.2.1.min.js"></script>
 
+    <script type="text/javascript" src="<?php
+
+    if(!empty($page_interne)){
+        echo '../';
+    }
+
+    ?>js/script.js"></script>
+
     <title>Musea Hero</title>
 </head>
 <body>
