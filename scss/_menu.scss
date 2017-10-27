@@ -80,16 +80,16 @@ label:hover {
 
 nav {
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
+    top: 200px;
+    left: 12%;
+    
     z-index: 2;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     
-    //transform: translate3d(0,0,0); /* material acceleration */
+    transform: translate3d(0,0,0); /* material acceleration */
     //sortie du texte
     transform: translateX(-100%);
     
@@ -117,7 +117,7 @@ nav {
         }
     }
     a { 
-        font-size: 2em;
+        font-size: 1em;
 
         font-family:$nunito;
         margin:15px;
@@ -126,6 +126,7 @@ nav {
         text-align:center;
         text-decoration: none;
         color: white;
+
         text-transform: uppercase;
         transform: translateX(-100%);
         transition: color .15s, transform .5s;
