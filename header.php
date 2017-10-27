@@ -1,15 +1,58 @@
-<?php ?>
+<?php
+
+$chemin = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+$page_interne = strstr($chemin, 'page-interne');
+$page_connection = strstr($chemin, 'connection-utilisateur');
+$page_inscription = strstr($chemin, 'inscription');
+
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="style/style.css" />
-    <link href="style/style-thibaut.css" rel="stylesheet" />
+    <link rel="stylesheet" href="<?php
+
+    if(!empty($page_interne)){
+        echo '../';
+    }
+    if(!empty($page_connection)){
+        echo '../';
+    }
+    if(!empty($page_inscription)){
+        echo '../';
+    }
+
+    ?>style/style.css" />
+    <link href="<?php
+
+    if(!empty($page_interne)){
+        echo '../';
+    }
+    if(!empty($page_connection)){
+        echo '../';
+    }
+    if(!empty($page_inscription)){
+        echo '../';
+    }
+
+    ?>style/style-thibaut.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Kalam:300,400,700|Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="<?php
+
+    if(!empty($page_interne)){
+        echo '../';
+    }
+    if(!empty($page_connection)){
+        echo '../';
+    }
+    if(!empty($page_inscription)){
+        echo '../';
+    }
+
+    ?>js/jquery-3.2.1.min.js"></script>
 
     <title>Musea Hero</title>
 </head>
