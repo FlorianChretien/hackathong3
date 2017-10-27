@@ -17,10 +17,10 @@ $page_inscription = strstr($chemin, 'inscription');
     if(!empty($page_interne)){
         echo '../';
     }
-    if(!empty($page_connection)){
+    if(!empty($page_connection) && $page_connection != 'false'){
         echo '../';
     }
-    if(!empty($page_inscription)){
+    if(!empty($page_inscription) && $page_inscription != 'false'){
         echo '../';
     }
 
@@ -30,10 +30,10 @@ $page_inscription = strstr($chemin, 'inscription');
     if(!empty($page_interne)){
         echo '../';
     }
-    if(!empty($page_connection)){
+    if(!empty($page_connection) && $page_connection != 'false'){
         echo '../';
     }
-    if(!empty($page_inscription)){
+    if(!empty($page_inscription) && $page_inscription != 'false'){
         echo '../';
     }
 
@@ -45,10 +45,10 @@ $page_inscription = strstr($chemin, 'inscription');
     if(!empty($page_interne)){
         echo '../';
     }
-    if(!empty($page_connection)){
+    if(!empty($page_connection) && $page_connection != 'false'){
         echo '../';
     }
-    if(!empty($page_inscription)){
+    if(!empty($page_inscription) && $page_inscription != 'false'){
         echo '../';
     }
 
