@@ -1,0 +1,36 @@
+@media screen and (min-width: 640px) {
+    #alert-pc{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #alert-pc{
+        display: none;
+    }
+
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .button-quete-start {
+        background-color: #658eff;
+        padding: 10px 20px;
+    }
+
+    .button-quete-start a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
