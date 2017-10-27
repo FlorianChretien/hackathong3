@@ -2,11 +2,8 @@
 
 $chemin = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 $page_interne = strstr($chemin, 'page-interne');
-$page_connection = strstr($chemin, 'connection-utilisateur');
-$page_inscription = strstr($chemin, 'inscription');
 
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -17,23 +14,11 @@ $page_inscription = strstr($chemin, 'inscription');
     if(!empty($page_interne)){
         echo '../';
     }
-    if(!empty($page_connection) && $page_connection != 'false'){
-        echo '../';
-    }
-    if(!empty($page_inscription) && $page_inscription != 'false'){
-        echo '../';
-    }
 
     ?>style/style.css" />
     <link href="<?php
 
     if(!empty($page_interne)){
-        echo '../';
-    }
-    if(!empty($page_connection) && $page_connection != 'false'){
-        echo '../';
-    }
-    if(!empty($page_inscription) && $page_inscription != 'false'){
         echo '../';
     }
 
@@ -43,12 +28,6 @@ $page_inscription = strstr($chemin, 'inscription');
     <script type="text/javascript" src="<?php
 
     if(!empty($page_interne)){
-        echo '../';
-    }
-    if(!empty($page_connection) && $page_connection != 'false'){
-        echo '../';
-    }
-    if(!empty($page_inscription) && $page_inscription != 'false'){
         echo '../';
     }
 
