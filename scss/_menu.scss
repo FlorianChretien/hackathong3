@@ -11,7 +11,7 @@ $nav-item-nb       : 6;
     opacity: 0;
 }
 label {
-    position: absolute;
+    position: fixed;
     margin: 0;
     padding: 0;
     border: none;
@@ -37,9 +37,9 @@ label {
         top: 1em;
         left: 1em;
         z-index: 4;
-        width: 6em;
-        height: 6em;
-        margin: 15px 0 0 15px;
+        width: 2em;
+        height: 2em;
+        margin: 10px 0 0 10px;
         padding: 0;
         transition: opacity .5s $timing-function;
         
@@ -79,7 +79,7 @@ label:hover {
 }
 
 nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -117,11 +117,11 @@ nav {
         }
     }
     a { 
-        font-size: 4em;
+        font-size: 2em;
 
         font-family:$nunito;
-        margin:30px;
-        padding: 20px 30px;
+        margin:15px;
+        
 
         text-align:center;
         text-decoration: none;
@@ -238,8 +238,8 @@ main {
     
     & img{
         z-index: 4;
-        width:130px;
-        height:130px;
+        width:50px;
+        height:50px;
         position:fixed;
         top:15px;
         right:15px;
@@ -252,7 +252,7 @@ header{
     position:fixed;
     top:0;
     
-    height:9.7em;
+    height:5em;
     background-color:white;
     z-index:3;
     width:100%;
