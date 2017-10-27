@@ -112,9 +112,7 @@ nav {
         //sortie 
         will-change: transform;
         transition: transform .5s $timing-function;
-        @media(min-width: 40em) {
-            width: $nav-width-desktop;
-        }
+        
     }
     a { 
         font-size: 1em;
@@ -131,9 +129,7 @@ nav {
         transform: translateX(-100%);
         transition: color .15s, transform .5s;
         transition-timing-function: $timing-function;
-        @media screen and(max-width:320px){
-            font-size:1.8em;
-        }
+        
         &::after{
             background-color: #FFF;
             border-bottom: 1px solid #FFF;
