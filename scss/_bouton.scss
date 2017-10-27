@@ -1,0 +1,71 @@
+//input
+
+input{
+    font-family:$kalam;
+    font-size:$titre;
+    color:$bleu;
+    
+    border: none;
+    border-bottom: 3px solid $gris;
+    margin-bottom:30px;
+    
+    &::placeholder{
+        color:$bleu;
+    }
+}
+/*  
+.pointed{
+    margin-top: 20px;
+    background:url(img/asset_cta/trame-pois-01.png);
+    z-index: 3;
+    /*overflow: hidden;
+}
+*/
+
+.btn-rounded-pointed{
+    
+    /*z-index: -1;*/
+    
+    background-color:$bleu;
+    
+    font-family:$nunito;
+    font-size:$titre;
+    text-decoration:none;
+    color:white;
+    
+    padding:20px 70px;
+    border-radius:100px;
+    
+    & svg{
+        width:1.4em;
+    }
+    
+}
+
+//btn profil
+
+.link-fix{
+
+
+    
+    & img{
+        z-index: 4;
+        width:130px;
+        height:130px;
+        position:fixed;
+        top:15px;
+        right:15px;
+        
+    }
+    
+}
+
+.barre-head{
+    position:fixed;
+    top:0;
+    
+    height:50px;
+    background-color:white;
+    z-index:4;
+    width:100%;
+}

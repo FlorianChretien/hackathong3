@@ -1,0 +1,51 @@
+@import"variables";
+@import"bouton";
+@import"menu";
+@import"main";
+@import"categorie";
+
+
+
+
+.container-home{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texte{
+    font-family:$nunito;
+    font-size:$soustitre;
+    color:$bleu;
+}
+
+
+.logo-first-page{
+    width:100%;
+}
+
+
+section{
+    margin-top:200px;
+   
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+& h1{
+    
+    font-family:$nunito;
+    font-weight: 200;
+    font-size:$titre;
+    color:$gris;
+    
+    }
+    
+}
+
+
+

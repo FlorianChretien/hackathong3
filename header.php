@@ -48,21 +48,21 @@ $page_interne = strstr($chemin, 'page-interne');
             </span>
         </label>
         <nav id="menu">
-            <a href="#">#</a>
-            <a href="#">#</a>
-            <a href="#">#</a>
-            <a href="#">#</a>
-            <a href="#">#</a>
-            <a href="#">#</a>
+            <a href="#">Voir mon profil</a>
+            <a href="#">Choisir une quête</a>
+            <a href="#">Revoir mes quêtes accomplies</a>
+            <a href="#">Voir ma collection</a>
+            <a href="#">Déconnexion</a>
+            
         </nav>
     
     
         <a href="#" class="link-fix">
             
-            <img src="img/asset_cta/profil.png">
+            <img src="../img/asset_cta/profil.png">
             
         </a>
-            
+       
     </header>
 	<h1 id="alert-pc">Ce site n'est disponible que pour mobile.</h1>
 
