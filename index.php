@@ -11,7 +11,7 @@ include_once('header.php');
     </select>
     <p> et je suis </p>
     <select id="lieu">
-        <option value="0">...</option>
+    <option value="0">...</option>
         <option value="1">chez moi</option>
         <option value="2">dans un musée</option>
     </select>
