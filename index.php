@@ -1,9 +1,10 @@
 <?php
 include_once('header.php');
+include_once('function.php');
 ?>
 
 <section id="section-index">
-    <p>Je suis </p>
+    <h2>Je suis </h2>
     <select id="lieu">
         <option value="0">...</option>
         <option value="1">chez moi</option>
@@ -11,16 +12,13 @@ include_once('header.php');
     </select>
     <div id="bloc-musee">
         <p>Super ! Entre le nom ou le code de ton musée :</p>
-        <form action="function.php" method="POST">
-            <input name="code" placeholder="..." />
-            <input type="submit" />
+        <form>
+            <input name="code" placeholder="..." >
+            <a href="http://localhost/_ECVDigital/hackathongit/hackathong3/page-interne/categorie-quete-1.php">Valider</a>
         </form>
     </div>
 </section>
 
 <?php
-
-formulaire_accueil();
-
 include_once('footer.php');
 ?>

@@ -57,7 +57,7 @@ $page_interne = strstr($chemin, 'page-interne');
             </span>
         </label>
         <nav id="menu">
-            <a href="#">Voir mon profil</a>
+            <a href="http://localhost/_ECVDigital/hackathongit/hackathong3/page-interne/profil.php">Voir mon profil</a>
             <a href="#">Choisir une quête</a>
             <a href="#">Revoir mes quêtes accomplies</a>
             <a href="#">Voir ma collection</a>
@@ -66,7 +66,7 @@ $page_interne = strstr($chemin, 'page-interne');
         </nav>
     
     
-        <a href="#" class="link-fix">
+        <a href="http://localhost/_ECVDigital/hackathongit/hackathong3/page-interne/profil.php" class="link-fix">
             
             <img src="../img/asset_cta/profil.png">
             

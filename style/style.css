@@ -12,8 +12,53 @@
         display: none;
     }
 
-    #section-index{
+    #section-index, #quete{
         margin-top: 80px;
+    }
+    #section-index h2, #section-index p, #section-index a, #quete h2{
+        font-family: Kalam, sans-serif;
+    }
+    #section-index p{
+        font-family: Kalam, sans-serif;
+    }
+    #section-index a{
+        font-family: Kalam, sans-serif;
+    }
+    #section-index select{
+        border: 1px black solid;
+    }
+
+    #quete h2{
+        color: #49A5AC;
+        text-align: center;
+    }
+    #quete p{
+        color: #49A5AC;
+        text-align: center;
+        font-family: Nunito, sans-serif;
+        padding:2% 3%;
+        font-size: 0.9em;
+    }
+    #quete .titre{
+        background: url("http://localhost/_ECVDigital/hackathongit/hackathong3/img/asset_cta/assetsblocpois-02.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 80px;
+        width:100%;
+    }
+    #quete .footer{
+        margin-top: 205px;
+    }
+    #quete .footer img{
+        width: 30px;
+    }
+    #quete a{
+        color: #49A5AC;
+        font-family: Nunito, sans-serif;
+    }
+    #quete a{
+
     }
 
     #map {

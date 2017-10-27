@@ -6,7 +6,7 @@ include_once('../header.php');
 	<section class="container-categorie">
 	    <h1>Aujourd'hui, je suis ...</h1>
 
-	    <a href="#" class="pointed-contain-1">
+	    <a href="http://localhost/_ECVDigital/hackathongit/hackathong3/page-interne/map2.php" class="pointed-contain-1">
 	    	
 	    	<img src="../img/icone/pinceau.png">
 	    	<p>Un peintre</p>
