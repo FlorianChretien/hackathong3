@@ -1,0 +1,260 @@
+
+//burger variables
+$timing-function   : cubic-bezier(0.190, 1.000, 0.220, 1.000);
+$nav-width-desktop : 40em;
+$nav-width-mobile  : 25em;
+$nav-item-nb       : 6;
+
+
+.input-menu {
+    position: fixed;
+    opacity: 0;
+}
+label {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    &::before {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(darken($bleu,0%),.6);
+        content: '';
+        opacity: 0;
+        pointer-events: none;
+        //aucune idée
+        transition: opacity .5s $timing-function;
+    }
+    .burger {
+        position: fixed;
+        top: 1em;
+        left: 1em;
+        z-index: 4;
+        width: 6em;
+        height: 6em;
+        margin: 15px 0 0 15px;
+        padding: 0;
+        transition: opacity .5s $timing-function;
+        
+        &::before,
+        .bar,
+        &::after {
+            position: absolute;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 12%;
+            background: $bleu;
+            content: '';
+            /*animation barres*/
+            transition: all .5s $timing-function;
+        }
+        .bar {
+            top: 44%;
+        }
+        &::before {
+            top: 0;
+            transform-origin: top left;
+        }
+        &::after {
+            bottom: 0;
+            transform-origin: bottom left;
+        }
+    }
+}
+
+/*input:focus + label,*/
+label:hover {
+    .burger {
+        opacity: .5;
+        
+    }
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    //transform: translate3d(0,0,0); /* material acceleration */
+    //sortie du texte
+    transform: translateX(-100%);
+    
+    //vitesse d'animation global
+    will-change: transform;
+    transition: transform .5s $timing-function;
+    
+
+    &::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0; 
+        z-index: -1;
+        width: $nav-width-mobile;
+        content: '';
+        //background menu inclinaison + entrée/sortie
+        transform: skewX(0deg) translateX(-100%);
+        transform-origin: bottom left;
+        //sortie 
+        will-change: transform;
+        transition: transform .5s $timing-function;
+        @media(min-width: 40em) {
+            width: $nav-width-desktop;
+        }
+    }
+    a { 
+        font-size: 4em;
+
+        font-family:$nunito;
+        margin:30px;
+        padding: 20px 30px;
+
+        text-align:center;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        transform: translateX(-100%);
+        transition: color .15s, transform .5s;
+        transition-timing-function: $timing-function;
+        @media screen and(max-width:320px){
+            font-size:1.8em;
+        }
+        &::after{
+            background-color: #FFF;
+            border-bottom: 1px solid #FFF;
+            
+        }
+        /*C'est une boucle for, la variable $i est instanciée juste au dessus dans "@for $i from 1 through $nav-item-nb"Cette variable court donc de 1 jusqu'à la valeur de $nav-item-nb, donc modifier la valeur de $nav-item-nb en fonction du nb de lien*/
+
+        @for $i from 1 through $nav-item-nb {
+            &:nth-child(#{$i}) { 
+                transition-delay: 0s, #{50 + (50 * $i)}ms; }   
+        }
+    }
+}
+
+main {
+    overflow: hidden;
+    .content {
+        transform: translate3d(0,0,0); /* material acceleration */
+        will-change: transform, filter;
+        transition: all .5s $timing-function;
+    }
+}
+
+[id="navcheck"]:checked {
+    & + label {
+        &::before {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .burger {
+            &::before,
+            &::after {
+                //logique ...
+                width: 141.42%; // Pythagore!
+            }
+            &::before {
+                //bar du haut
+                transform: rotate(45deg) translateY(-50%);
+            }
+            &::after {
+                //bar du bas
+                transform: rotate(-45deg) translateY(50%);
+            }
+            .bar {
+                //bar centrale, agi sur l'apparition/animation
+                transform: scale(0);
+            }
+        }
+    }
+    & ~ nav {
+        //entrée du nav
+        transform: translateX(0);
+        &::before {
+            //inclinaison du background + entrée
+            transform: skewX(15deg) translateX(0);
+        }
+        a {
+            //entrée des liens
+            transform: translateX(0);
+        }
+    }
+    & ~ main .content {
+        //animation écran arrière plan à l'ouverture du menu
+        transform: translateX(3em);
+        transform-origin: left center;
+        -webkit-filter: blur(2px);
+                filter: blur(2px); /* quite laggy :S */
+    }
+}
+
+/* helper */
+
+
+.visuallyhidden { 
+    border:0; 
+    clip:rect(0 0 0 0); 
+    height:1px; 
+    margin-left:0px; 
+    overflow:hidden; 
+    padding:0; 
+    position:absolute; 
+    width:1px;
+    
+    
+    
+    font-size:2em;
+    margin-top:0;
+    padding:0;
+    top:1px;
+    line-height:10px;
+    
+}
+
+
+
+
+
+//btn profil
+
+.link-fix{
+
+
+    
+    & img{
+        z-index: 4;
+        width:130px;
+        height:130px;
+        position:fixed;
+        top:15px;
+        right:15px;
+        
+    }
+    
+}
+
+header{
+    position:fixed;
+    top:0;
+    
+    height:9.7em;
+    background-color:white;
+    z-index:3;
+    width:100%;
+}
+
